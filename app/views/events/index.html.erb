@@ -1,1 +1,7 @@
-events#index page
+<!-- events#index page -->
+
+<h1>Events</h1>
+<hr>
+<% @events.each do |current_event| %>
+  <%= render 'single_event', event: current_event %>
+<% end %>
